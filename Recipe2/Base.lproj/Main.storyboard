@@ -38,6 +38,9 @@
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KLo-OQ-1N3" id="EaR-ca-fTg">
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="mAl-xc-MA9" kind="show" id="IZG-6Y-HSz"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -45,7 +48,13 @@
                             <outlet property="delegate" destination="vXZ-lx-hvc" id="Ks1-ub-huv"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="Gbh-MP-T47"/>
+                    <navigationItem key="navigationItem" id="Gbh-MP-T47">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="jhq-48-SqA">
+                            <connections>
+                                <segue destination="Kb4-eq-1od" kind="show" id="YzF-HT-AM5"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
